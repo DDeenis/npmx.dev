@@ -515,7 +515,10 @@ function getTagVersions(tag: string): VersionDisplay[] {
         </button>
 
         <!-- Expanded other versions -->
-        <div v-if="otherVersionsExpanded" class="ms-4 ps-2 border-is border-border space-y-0.5">
+        <div
+          v-if="otherVersionsExpanded"
+          class="ms-4 ps-2 pe-1 border-is border-border space-y-0.5 max-h-44 overflow-y-auto"
+        >
           <!-- Hidden tag rows (overflow from visible tags) -->
           <div v-for="row in hiddenTagRows" :key="row.id" class="py-1">
             <div class="flex items-center justify-between gap-2">
