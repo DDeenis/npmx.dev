@@ -166,11 +166,13 @@ export default defineNuxtConfig({
       {
         name: 'Geist',
         weights: ['400', '500', '600'],
+        preload: true,
         global: true,
       },
       {
         name: 'Geist Mono',
         weights: ['400', '500'],
+        preload: true,
         global: true,
       },
     ],
